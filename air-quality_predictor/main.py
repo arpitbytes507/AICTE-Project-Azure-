@@ -8,7 +8,7 @@ X_train, X_test, y_train, y_test, scaler= load_preprocesses_data('/workspaces/AI
 #Model taining function
 train(X_train,y_train,X_test,y_test)
 #Using Sample for predicition
-feature_names = ['NO2 Mean', 'O3 Mean', 'SO2 Mean', 'CO Mean']
+feature_names=['NO2 Mean', 'O3 Mean', 'SO2 Mean', 'CO Mean']
 # Sample input with proper column names
 sample = pd.DataFrame([[32, 65, 5.5, 1015]], columns=feature_names)
 #Predict

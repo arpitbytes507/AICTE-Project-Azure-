@@ -3,7 +3,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 
 def train(X_train, y_train, X_test, y_test):
     # Use fewer trees to speed up training
-    model = RandomForestRegressor(n_estimators=10,max_depth=5,n_jobs=1,random_state=42)
+    model=RandomForestRegressor(n_estimators=10,max_depth=5,n_jobs=1,random_state=42)
     print("[INFO] Training model...")
     model.fit(X_train, y_train)
     predictions=model.predict(X_test)

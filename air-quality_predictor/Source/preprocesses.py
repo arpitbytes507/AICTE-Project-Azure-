@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
 def load_preprocesses_data(csv_path="data/air_quality_data.csv"):
-    df = pd.read_csv(csv_path)
+    df=pd.read_csv(csv_path)
     df = df.dropna()
     #Features selection
     X = df[['NO2 Mean', 'O3 Mean', 'SO2 Mean', 'CO Mean']]
